@@ -1,0 +1,772 @@
+@charset "utf-8";
+
+@import "default.css";
+/* @import "header.css";
+@import "footer.css";
+@import "font_style.css"; */
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.container {
+  width: 90%;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+/* 헤더 */
+header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+header h1 {
+  display: block;
+  font-size: 0px;
+  color: transparent;
+  margin-bottom: 0;
+}
+
+header>h1>a {
+  display: block;
+}
+
+.h1_logo_m {
+  display: none;
+}
+
+header>nav {
+  width: 600px;
+}
+
+header>nav>ul {
+  display: flex;
+}
+
+header ul a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
+
+nav>ul>li {
+  position: relative;
+  width: 25%;
+}
+
+nav>ul>li>a {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.sub {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  background: #fff;
+  z-index: 998;
+  display: none;
+}
+
+nav>ul>li:hover>a {
+  color: #fff;
+  background: #005539ca;
+}
+
+.sub>li:hover>a {
+  color: #fff;
+  background: #00553961;
+}
+
+/* 슬라이드 */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #fff;
+}
+
+.swiper-pagination-bullet {
+  background-color: #fff;
+}
+
+#bg_1_d,
+#bg_2_d,
+#bg_3_d {
+  display: block;
+}
+
+#bg_1_t,
+#bg_2_t,
+#bg_3_t,
+#bg_1_m,
+#bg_2_m,
+#bg_3_m {
+  display: none;
+}
+
+/* 뉴스 */
+.grid_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 480px;
+  grid-gap: 24px;
+}
+
+.grid_container div img {
+  width: 100%;
+  height: 398px;
+}
+
+/* 메뉴 */
+.popular_menu_item:hover {
+  transform: scale(0.98, 0.98);
+  transition: all 0.4s;
+}
+
+.h-100 {
+  position: relative;
+}
+
+.menu_text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 16px;
+  text-shadow: 3px 3px 10px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  display: none;
+}
+
+.popular_menu_item:hover .menu_text {
+  display: block;
+}
+
+/* 스토어 */
+.store_bg {
+  background: url("img/store_bg.jpg") repeat-x;
+  background-size: cover;
+}
+
+.store .container {
+  display: flex;
+  padding-left: 0;
+  padding-right: 0;
+  flex-direction: row;
+}
+
+.store .container>.left_box {
+  display: flex;
+  flex-direction: column;
+}
+
+.store .container>.left_box>.left_box_top {
+  display: flex;
+  flex: 1;
+}
+
+.store .container>.left_box>.left_box_top>div {
+  flex: 1;
+}
+
+.store .container>.left_box>.left_box_center {
+  display: flex;
+  flex: 1;
+}
+
+.store .container>.left_box>.left_box_center>div {
+  flex: 1;
+}
+
+.store .container>.right_box {
+  display: flex;
+}
+
+.store .container>.right_box div {
+  flex: 1;
+}
+
+.store img {
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.store img:hover {
+  transform: scale(1.02, 1.02);
+  transition: all 0.6s;
+  opacity: 1;
+}
+
+.store .limcoffee_logo {
+  opacity: 1;
+}
+
+.store .container>.left_box>.left_box_top,
+.store .container>.left_box>.left_box_top>div,
+.store .container>.left_box>.left_box_center,
+.store .container>.left_box>.left_box_center>div,
+.store .container>.left_box>.left_box_bottom,
+.store .container>.right_box>.right_box_top,
+.store .container>.right_box>.right_box_bottom {
+  overflow: hidden;
+}
+
+.footer {
+  width: 100%;
+  background-color: #005538;
+  color: #fff;
+  font-size: 12px;
+}
+
+.footer>div>div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer i {
+  color: #fff;
+  padding-right: 8px;
+}
+
+.footer address {
+  padding: 20px;
+}
+
+.footer address p {
+  margin-bottom: 10px;
+}
+
+.sns li {
+  float: left;
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+/* sub1 시작  */
+.dessert_bg {
+  width: 100%;
+  height: 500px;
+  background-position: center center;
+  background-size: cover;
+}
+
+.drink_bg {
+  width: 100%;
+  height: 500px;
+  background-position: center center;
+  background-size: cover;
+}
+
+
+.tab_menu {
+  height: 95px;
+  align-items: center;
+}
+
+.tab_menu>.tab_menu_items {
+  text-align: center;
+  line-height: 95px;
+  border-bottom: 4px solid #fff;
+  position: relative;
+  top: -4px;
+  font-weight: bold;
+}
+
+
+.tab_menu>.tab_menu_items:hover,
+.tab_menu>.tab_menu_items:focus {
+  border-color: #005538;
+  transition: all 0.4s;
+  outline: 0px none;
+}
+
+.border-bottom {
+  margin-bottom: 167px;
+}
+
+.container>.h2_coffee,
+.container>.h2_beverage,
+.container>.h2_milk,
+.container>.h2_tea,
+.container>.h2_Basque,
+.container>.h2_madeleine,
+.container>.h2_eggtart,
+.container>.h2_cookie {
+  font-size: 40px;
+  color: #005538;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.container>p {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container>.bean_info {
+  margin-bottom: 124px;
+}
+
+.container>.bean_info>.bean {
+  padding: 20px;
+}
+
+.container>.bean_info>.bean>h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.container>.bean_info>.bean>.origin {
+  margin-bottom: 10px;
+}
+
+.container>.bean_info>.bean>.recipe {
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: #999;
+}
+
+.container>.bean_info>.bean>.feature {
+  font-size: 14px;
+  padding-top: 6px;
+}
+
+h3.brewing_header,
+h3.coffee_header,
+h3.beverage_header,
+h3.milk_header,
+h3.tea_header,
+h3.eillestea_header,
+h3.Basque_header,
+h3.madeleine_header,
+h3.eggtart_header,
+h3.cookie_header {
+  margin-bottom: 47px;
+  font-size: 24px;
+}
+
+.brewing_contents,
+.coffee_contents,
+.beverage_contents,
+.milk_contents,
+.tea_contents,
+.eillestea_contents,
+.Basque_contents,
+.madeleine_contents,
+.eggtart_contents,
+.cookie_contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 85px;
+}
+
+.brewing_contents img {
+  margin-bottom: 23px;
+}
+
+.brewing_contents p,
+.coffee_contents p,
+.beverage_contents p,
+.milk_contents p,
+.tea_contents p,
+.eillestea_contents p,
+.Basque_contents p,
+.madeleine_contents p,
+.eggtart_contents p,
+.cookie_contents p {
+  text-align: center;
+}
+
+
+.brewing {
+  margin-bottom: 75px;
+}
+
+
+.coffee p {
+  text-align: center;
+}
+
+
+.coffee_contents img,
+.beverage_contents img,
+.milk_contents img,
+.tea_contents img,
+.eillestea_contents img,
+.Basque_contents img,
+.madeleine_contents img,
+.eggtart_contents img,
+.cookie_contents img {
+  margin-bottom: 23px;
+}
+
+
+.pr {
+  position: relative;
+}
+
+.pa {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.brewing_text,
+.coffee_text,
+.beverage_text,
+.milk_text,
+.tea_text,
+.Basque_text,
+.madeleine_text,
+.eggtart_text,
+.cookie_text,
+.eillestea_text {
+  display: none;
+}
+
+.brewing_text p,
+.coffee_text p,
+.beverage_text p,
+.milk_text p,
+.tea_text p,
+.Basque_text p,
+.madeleine_text p,
+.eggtart_text p,
+.cookie_text p,
+.eillestea_text p {
+  font-size: 14px;
+}
+
+.brewing_text h4,
+.coffee_text h4,
+.beverage_text h4,
+.milk_text h4,
+.tea_text h4,
+.Basque_text h4,
+.madeleine_text h4,
+.eggtart_text h4,
+.cookie_text h4,
+.eillestea_text h4 {
+  font-size: 16px;
+}
+
+.brewing_text span,
+.coffee_text span,
+.beverage_text span,
+.milk_text span,
+.tea_text span,
+.Basque_text span,
+.madeleine_text span,
+.eggtart_text span,
+.cookie_text span,
+.eillestea_text span {
+  font-size: 12px;
+  color: #005538;
+}
+
+.show {
+  background:#fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  display: block;
+}
+
+/* 오시는길 */
+
+.about_container {
+  min-height: 661px;
+  padding-top: 30px;
+}
+
+#map {
+  width: 90vw;
+  max-width: 800px;
+  height: 500px;
+  margin: auto;
+}
+
+.about_text {
+  text-align: left;
+  width: 800px;
+  margin: auto;
+}
+
+.about_text p {
+  margin-bottom: 30px;
+}
+
+/* 매장사진 */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  padding: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid-container div {
+  overflow: hidden;
+
+}
+
+.grid-container>div>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.4s;
+  filter: brightness(60%);
+}
+
+.grid-container div:hover img {
+  transform: scale(1.02);
+  filter: contrast(110%) brightness(120%);
+}
+
+/* 뉴스 & 이벤트 */
+
+.news_container {
+  margin-bottom: 50px;
+}
+
+.news_bg {
+  background: skyblue;
+  max-width: 1320px;
+  width: 100%;
+  padding: 20px;
+}
+
+.news_innerbox {
+  width: 90%;
+  margin: auto;
+}
+
+.news_h2,
+.news_h3 {
+  color: rgb(0, 127, 177);
+}
+
+.news_h2 {
+  padding: 40px 10px 10px;
+}
+
+.news_h3 {
+  text-align: left;
+  font-weight: bold;
+}
+
+.news_h3 span {
+  display: block;
+  font-weight: normal;
+  font-size: 12px;
+  margin-top: 14px;
+}
+
+.news_table {
+  background: #fff;
+  border-radius: 10px;
+  width: 100%;
+  margin: 20px 0;
+}
+
+col:nth-child(1) {
+  width: 530px;
+}
+
+col:nth-child(2) {
+  width: 1000px;
+}
+
+td {
+  border-bottom: 1px solid skyblue;
+  color: skyblue;
+  padding: 15px;
+}
+
+.vat {
+  vertical-align: top;
+}
+
+.news_btn {
+  display: block;
+  width: 100px;
+  line-height: 20px;
+  font-size: 10px;
+  color: skyblue;
+  padding: 10px;
+  background: rgb(0, 23, 61);
+  border-radius: 20px;
+}
+
+.news_table img {
+  width: 100%;
+  width: 500px;
+  height: 135px;
+}
+
+
+@media screen and (max-width:1500px) {
+  .store .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media screen and (max-width:1200px) {
+    .grid_container {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .grid_container div {
+      border: 1px solid black;
+    }
+
+    #bg_1_d,
+    #bg_2_d,
+    #bg_3_d {
+      display: none;
+    }
+
+    #bg_1_t,
+    #bg_2_t,
+    #bg_3_t {
+      display: block;
+    }
+
+    #bg_1_m,
+    #bg_2_m,
+    #bg_3_m {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width:698px) {
+    .grid_container {
+      grid-template-columns: 1fr;
+    }
+
+    .grid_container div {
+      border: 1px solid black;
+    }
+
+    .brewing_contents,
+    .coffee_contents,
+    .beverage_contents,
+    .milk_contents,
+    .tea_contents,
+    .eillestea_contents,
+    .Basque_contents,
+    .madeleine_contents,
+    .eggtart_contents,
+    .cookie_contents {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 85px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 10px;
+      padding: 10px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  }
+
+  @media screen and (max-width:640px) {
+    .h1_logo_d {
+      display: none;
+    }
+
+    .h1_logo_m {
+      display: block;
+    }
+
+    header {
+      flex-direction: column;
+    }
+
+    header>nav {
+      width: 240px;
+    }
+
+    nav>ul>li>a {
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .sub {
+      font-size: 10px;
+    }
+
+    .store .container>.left_box>.left_box_top>div {
+      flex: 1 1 0;
+    }
+
+    .store .container>.left_box>.left_box_center>div {
+      flex: 1 1 0;
+    }
+
+    .about_text {
+      max-width: 300px;
+      padding: 20px;
+    }
+
+  }
+
+  @media screen and (max-width:576px) {
+
+    #bg_1_d,
+    #bg_2_d,
+    #bg_3_d,
+    #bg_1_t,
+    #bg_2_t,
+    #bg_3_t {
+      display: none;
+    }
+
+    #bg_1_m,
+    #bg_2_m,
+    #bg_3_m {
+      display: block;
+    }
+
+    #map {
+      width: 70vw;
+      height: 146px;
+    }
+
+    .footer {
+      font-size: 10px;
+    }
+
+
+  }
+}

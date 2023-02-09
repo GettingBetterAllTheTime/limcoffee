@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="Keywords" content="림커피, 안산 림커피, 안산 고잔동카페, 안산 카페 추천, 안산 베이커리 카페, 안산커피맛집, 바스크치즈케이크">
+    <meta name="Description" content="맛으로 승부하는 고잔동 신상갬성카페">
+    <title>림커피 Lim Coffee - drink</title>
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- 부트스트랩 css cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 폰트어썸 cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- 제이쿼리 cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js"
+        integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+    <!-- 부트스트랩 js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- js 연결 -->
+    <script src="js/script.js"></script>
+</head>
+
+<body id="drink">
+    <header class="container">
+        <? include "header.html" ?>
+    </header>
+    <div class="drink_bg"></div>
+
+    <div class="container tab_menu row">
+        <a href="#coffee" class="tab_menu_items col-3 fs-4" data-index="0">coffee</a>
+        <a href="#beverage" class="tab_menu_items col-3 fs-4" data-index="1">beverage</a>
+        <a href="#milk" class="tab_menu_items col-3 fs-4" data-index="2">milk</a>
+        <a href="#tea" class="tab_menu_items col-3 fs-4" data-index="3">tea</a>
+    </div>
+    <div class="border-bottom"></div>
+
+    <div class="container cont mb-5">
+        <h2 class="h2_coffee" id="coffee">Coffee</h2>
+        <p>주문 시 원두를 선택해 주세요.</p>
+        <div class="bean_info row">
+            <div class="bean col-sm-4 text-center">
+                <h3>히스토리 다크</h3>
+                <p class="origin">Brazil / Colombia / Guatemala</p>
+                <p class="recipe">견과류, 브라운 슈가, 카카오</p>
+                <p class="feature">볶은 견과류, 갈색설탕의 단맛과 카카오의 향이 깊은 부드러운 질감의 커피입니다.</p>
+            </div>
+            <div class="bean col-sm-4 text-center">
+                <h3>나쓰메 소세키</h3>
+                <p class="origin">Ethiopia / Colombia / Guatemala</p>
+                <p class="recipe">시트러스, 아몬드, 밀크초콜릿</p>
+                <p class="feature">밸런스를 갖춘 부드러운 과일과 견과류의 향미, 밀크 초콜렛의 단맛과 밀크티와 같은 여운으로 마무리됩니다.</p>
+            </div>
+            <div class="bean col-sm-4 text-center">
+                <h3>파블로 네루다</h3>
+                <p class="origin">Guatemala / Ethiopia</p>
+                <p class="recipe">크랜베리, 스트로베리, 헤즐넛 브라운슈가</p>
+                <p class="feature">화려한 향미와 균형잡힌 단맛 뒤에 주스와 와인의 여운을 남깁니다.</p>
+            </div>
+        </div>
+
+        <div class="brewing">
+            <h3 class="brewing_header">BREWING</h3>
+
+            <div class="brewing_contents">
+                <div class="pr pr1">
+                    <div class="pa text-center brewing_text p-5 brewing1">
+                        <p class="">볶은 견과류, 갈색설탕의 단맛과 카카오의 향이 깊은 부드러운 질감의 커피</p>
+                        <h4 class="m-5 fw-bold mx-auto">History Dark</h4>
+                        <span>5,000</span>
+                    </div>
+                    <img src="https://via.placeholder.com/260x330" class="d-block">
+                    <p>히스토리 다크</p>
+                </div>
+                <div class="pr pr2">
+                    <div class="pa text-center brewing_text p-4 brewing2">
+                        <p class="mt-4">밸런스를 갖춘 부드러운 과일과 견과류의 향미, 밀크 초콜렛의 단맛과 밀크티와 같은 여운으로 마무리됩니다.</p>
+                        <h4 class="m-5 fw-bold mx-auto">Nasseume Soseki</h4>
+                        <span>5,000</span>
+                    </div>
+                    <img src="https://via.placeholder.com/260x330" class="d-block">
+                    <p>나쓰메 소세키</p>
+                </div>
+                <div class="pr pr3">
+                    <div class="pa text-center brewing_text p-4 brewing3">
+                        <p class="mt-4">화려한 향미와 균형 잡힌 단맛 뒤에 주스와 와인의 여운을 남깁니다.</p>
+                        <h4 class="m-5 fw-bold mx-auto">Single Origin</h4>
+                        <span>5,500</span>
+                    </div>
+                    <img src="https://via.placeholder.com/260x330" class="d-block">
+                    <p>파블로 네루다</p>
+                </div>
+                <div class="pr pr4">
+                    <div class="pa text-center brewing_text p-4 brewing4">
+                        <p class="mt-4">여러 농장이 아닌 단일 농장에서 생산된 커피입니다. 블렌딩 커피와는 또 다른 본연의 개성, 향미를 느낄 수 있습니다.</p>
+                        <h4 class="m-5 fw-bold mx-auto">History Dark</h4>
+                        <span>5,500</span>
+                    </div>
+                    <img src="https://via.placeholder.com/260x330" class="db">
+                    <p>싱글 오리진</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="coffee">
+            <h3 class="coffee_header">COFFEE</h3>
+
+            <div class="coffee_contents">
+                <div class="pr pr5">
+                    <div class="pa text-center brewing_text p-5 brewing5">
+                        <p class="">고온, 고압으로 추출한 아주 진한 이탈리아식 커피로, 쓴맛이 강하지만 카페인은 드립식 커피보다 적게 함유돼 있습니다.</p>
+                        <h4 class="m-5 fw-bold mx-auto">Espresso</h4>
+                        <span>3,000</span>
+                    </div>
+                    <img src="https://via.placeholder.com/260x330" class="d-block">
+                    <p>에스프레소</p>
+                </div>
+                <div class="pr pr6">
+                    <div class="pa text-center brewing_text p-5 brewing6">
+                        <p class="">에스프레소에 뜨거운 물을 더한 커피. 농도는 일반적인 드립 커피와 비슷하지만 풍미가 다르다.
+                        </p>
+                        <h4 class="m-5 fw-bold mx-auto">Americano</h4>
+                        <span>3,500</span>
+                    </div>
+                    <img src="img/americano.jpg" class="d-block">
+                    <p>아메리카노</p>
+                </div>
+                <div class="pr pr7">
+                    <div class="pa text-center brewing_text p-5 brewing7">
+                        <p class="">뜨거운 우유와 섞은 커피에 계핏가루나 초콜릿 가루 따위를 넣어 만든 차. 우유 거품이나 크림 등을 얹어 마신다.
+                        </p>
+                        <h4 class="m-5 fw-bold mx-auto">Cappuccino</h4>
+                        <span>4,500</span>
+                    </div>
+                    <img src="https://via.placeholder.com/260x330" class="d-block">
+                    <p>카푸치노</p>
+                </div>
+                <div class="pr pr8">
+                    <div class="pa text-center brewing_text p-5 brewing8">
+                        <p class="">에스프레소에 뜨거운 우유를 곁들인 커피
+                        </p>
+                        <h4 class="m-5 fw-bold mx-auto">Caffe Latte</h4>
+                        <span>4,500</span>
+                    </div>
+                    <img src="img/caffelatte.png" class="d-block">
+                    <p>카페라떼</p>
+                </div>
+                <div class="pr pr9">
+                    <div class="pa text-center brewing_text p-5 brewing9">
+                        <p class="">에스프레소에 거품을 낸 우유를 붓고 캐러멜시럽을 얹은 커피. 부드럽고 달콤한 맛이 난다.
+                        </p>
+                        <h4 class="m-5 fw-bold mx-auto">Caramel Macchiat</h4>
+                        <span>4,500</span>
+                    </div>
+                    <img src="https://via.placeholder.com/260x330" class="d-block">
+                    <p>카라멜마끼아또</p>
+                </div>
+                <div class="pr pr10">
+                    <div class="pa text-center brewing_text p-5 brewing10">
+                        <p class="">에스프레소에 우유와 바닐라시럽을 섞은 음료
+                        </p>
+                        <h4 class="m-5 fw-bold mx-auto">vanilla latte</h4>
+                        <span>4,500</span>
+                    </div>
+                    <img src="https://via.placeholder.com/260x330" class="d-block">
+                    <p>바닐라라떼</p>
+                </div>
+                <div class="pr pr11">
+                    <div class="pa text-center brewing_text p-5 brewing11">
+                        <p class="">에스프레소에 우유와 초콜릿을 넣고 휘핑크림을 올린 커피.
+                        </p>
+                        <h4 class="m-5 fw-bold mx-auto">café Mocha</h4>
+                        <span>5,000</span>
+                    </div>
+                    <img src="https://via.placeholder.com/260x330" class="d-block">
+                    <p>카페모카</p>
+                </div>
+                <div class="pr pr12">
+                    <div class="pa text-center brewing_text p-5 brewing12">
+                        <p class="">에스프레소에 우유, 바닐라 아이스크림, 검은콩을 넣고 얼음과 함께 블렌딩한 커피
+                        </p>
+                        <h4 class="m-5 fw-bold mx-auto">Black Bean Frappuccinno</h4>
+                        <span>5,500</span>
+                    </div>
+                    <img src="img/blackbean.png" class="d-block">
+                    <p>검은콩 프라푸치노</p>
+                </div>
+                <div class="pr pr13">
+                    <div class="pa text-center brewing_text p-5 brewing13">
+                        <p class="">에스프레소에 우유, 바닐라 아이스크림, 자바칩을 넣고 얼음과 함께 블렌딩한 커피
+                        </p>
+                        <h4 class="m-5 fw-bold mx-auto">Java Chip Frappuccinno</h4>
+                        <span>5,500</span>
+                    </div>
+                    <img src="https://via.placeholder.com/260x330" class="d-block">
+                    <p>자바칩 프라푸치노</p>
+                </div>
+                <div class="pr pr14">
+                    <div class="pa text-center brewing_text p-5 brewing14">
+                        <p class="">진짜 코코넛의 고소한 풍미와 우유의 맛이 조화로운 커피
+                        </p>
+                        <h4 class="m-5 fw-bold mx-auto">Coconut Crema</h4>
+                        <span>5,500</span>
+                    </div>
+                    <img src="https://via.placeholder.com/260x330" class="d-block">
+                    <p>코코넛 크레마</p>
+                </div>
+                <div class="pr pr15">
+                    <div class="pa text-center brewing_text p-5 brewing15">
+                        <p class="">콜드브루에 고압의 질소를 주입하여 목넘김이 부드러운 커피
+                        </p>
+                        <h4 class="m-5 fw-bold mx-auto">Nitro Coffee</h4>
+                        <span>4,000</span>
+                    </div>
+                    <img src="https://via.placeholder.com/260x330" class="d-block">
+                    <p>니트로커피</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container cont mb-5">
+        <h2 class="h2_beverage" id="beverage">beverage</h2>
+        <p>에이드류는 모두 직접 만든 과일청으로 만듭니다.</p>
+
+        <div class="beverage">
+            <h3 class="beverage_header">BEVERAGE</h3>
+
+            <div class="beverage_contents">
+                <div class="pr bv1">
+                    <div class="pa text-center beverage_text p-5 beverage1">
+                        <p class="">자몽의 과즙에 물, 설탕, 탄산을 넣어 만든 음료</p>
+                        <h4 class="m-5 fw-bold mx-auto">Grapefruit Ade</h4>
+                        <span>5,000</span>
+                    </div>
+                    <img src="img/grapeFruitAde.png" class="d-block">
+                    <p>수제 자몽에이드</p>
+                </div>
+                <div class="pr bv2">
+                    <div class="pa text-center beverage_text p-4 beverage2">
+                        <p class="mt-4">레몬의 과즙에 물, 설탕, 탄산을 넣어 단맛을 낸 음료</p>
+                        <h4 class="m-5 fw-bold mx-auto">Lemonade</h4>
+                        <span>5,000</span>
+                    </div>
+                    <img src="https://via.placeholder.com/260x330" class="d-block">
+                    <p>수제 레몬에이드</p>
+                </div>
+                <div class="pr bv3">
+                    <div class="pa text-center beverage_text p-4 beverage3">
+                        <p class="mt-4">블루베리와 레몬의 과즙에 물, 설탕, 탄산을 넣어 단맛을 낸 음료</p>
+                        <h4 class="m-5 fw-bold mx-auto">Blueberry Lemonade</h4>
+                        <span>5,000</span>
+                    </div>
+                    <img src="https://via.placeholder.com/260x330" class="d-block">
+                    <p>수제 블루베리 레몬에이드</p>
+                </div>
+                <div class="pr bv4">
+                    <div class="pa text-center beverage_text p-4 beverage4">
+                        <p class="mt-4">키위에 물, 설탕, 탄산을 넣어 단맛을 낸 음료</p>
+                        <h4 class="m-5 fw-bold mx-auto">Kiwi Juice</h4>
+                        <span>5,000</span>
+                    </div>
+                    <img src="img/kiwijuice.png" class="d-block">
+                    <p>키위쥬스</p>
+                </div>
+                <div class="pr bv5">
+                    <div class="pa text-center beverage_text p-4 beverage5">
+                        <p class="mt-4">망고의 즙을 내어 단맛을 더한 음료</p>
+                        <h4 class="m-5 fw-bold mx-auto">Mango Juice</h4>
+                        <span>5,000</span>
+                    </div>
+                    <img src="https://via.placeholder.com/260x330" class="db">
+                    <p>망고쥬스</p>
+                </div>
+                <div class="pr bv6">
+                    <div class="pa text-center beverage_text p-5 beverage6">
+                        <p class="">바나나에 요거트를 넣어 단맛을 더한 음료</p>
+                        <h4 class="m-5 fw-bold mx-auto">Banana Yogurt Juice</h4>
+                        <span>5,000</span>
+                    </div>
+                    <img src="https://via.placeholder.com/260x330" class="d-block">
+                    <p>바나나 요거트 쥬스</p>
+                </div>
+                <div class="pr bv7">
+                    <div class="pa text-center beverage_text p-4 beverage7">
+                        <p class="mt-4">곡물의 고소한 향과 엿당의 단맛이 어우러진 한국의 전통 음료</p>
+                        <h4 class="m-5 fw-bold mx-auto">Sweet Rice Drink</h4>
+                        <span>5,000</span>
+                    </div>
+                    <img src="https://via.placeholder.com/260x330" class="d-block">
+                    <p>식혜</p>
+                </div>
+                <div class="pr bv8">
+                    <div class="pa text-center beverage_text p-4 beverage8">
+                        <p class="mt-4">멜론의 풍부한 과즙과 깔끔한 단맛이 어우러진 음료</p>
+                        <h4 class="m-5 fw-bold mx-auto">Melon juice</h4>
+                        <span>5,000</span>
+                    </div>
+                    <img src="https://via.placeholder.com/260x330" class="d-block">
+                    <p>멜론 쥬스</p>
+                </div>
+                <div class="pr bv9">
+                    <div class="pa text-center beverage_text p-4 beverage9">
+                        <p class="mt-4">수박을 통째로 갈아넣어 단맛을 더한 음료</p>
+                        <h4 class="m-5 fw-bold mx-auto">Watermelon Juice</h4>
+                        <span>5,000</span>
+                    </div>
+                    <img src="https://via.placeholder.com/260x330" class="db">
+                    <p>[여름시즌] 수박 쥬스</p>
+                </div>
+                <div class="pr bv10">
+                    <div class="pa text-center beverage_text p-4 beverage10">
+                        <p class="mt-4">달콤상큼한 제주감귤의 풍부한 맛을 담은 음료</p>
+                        <h4 class="m-5 fw-bold mx-auto">Jeju Tangerine juice</h4>
+                        <span>5,000</span>
+                    </div>
+                    <img src="https://via.placeholder.com/260x330" class="db">
+                    <p>[겨울시즌] 제주 감귤 쥬스</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container cont mb-5">
+        <h2 class="h2_milk" id="milk">milk</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        <div class="milk">
+            <h3 class="milk_header">MILK</h3>
+
+            <div class="milk_contents">
+                <div class="pr milk1">
+                    <div class="pa text-center milk_text p-5 m1">
+                        <p class="">얼그레이 홍차에 우유를 섞은 음료</p>
+                        <h4 class="m-5 fw-bold mx-auto">Earl Grey Milk Tea</h4>
+                        <span>5,000</span>
+                    </div>
+                    <img src="https://via.placeholder.com/260x330" class="d-block">
+                    <p>얼그레이 밀크티</p>
+                </div>
+                <div class="pr milk2">
+                    <div class="pa text-center milk_text p-4 m2">
+                        <p class="mt-4">검은콩과 곡식을 말려 빻은 가루에 우유를 섞은 음료</p>
+                        <h4 class="m-5 fw-bold mx-auto">Grain Latte</h4>
+                        <span>5,000</span>
+                    </div>
+                    <img src="https://via.placeholder.com/260x330" class="d-block">
+                    <p>검은콩 미숫가루</p>
+                </div>
+                <div class="pr milk3">
+                    <div class="pa text-center milk_text p-4 m3">
+                        <p class="mt-4">우유에 코코아나 초콜릿을 섞은 달고 부드러운 음료</p>
+                        <h4 class="m-5 fw-bold mx-auto">Chocolate</h4>
+                        <span>5,000</span>
+                    </div>
+                    <img src="https://via.placeholder.com/260x330" class="d-block">
+                    <p>초콜릿</p>
+                </div>
+                <div class="pr milk4">
+                    <div class="pa text-center milk_text p-4 m4">
+                        <p class="mt-4">녹차에 우유를 섞어 만든 음료</p>
+                        <h4 class="m-5 fw-bold mx-auto">Green Tea Latte</h4>
+                        <span>5,000</span>
+                    </div>
+                    <img src="img/greenteaLatte.png" class="d-block">
+                    <p>녹차라떼</p>
+                </div>
+                <div class="pr milk5">
+                    <div class="pa text-center milk_text p-4 m5">
+                        <p class="mt-4">딸기에 우유를 섞어 만든 음료</p>
+                        <h4 class="m-5 fw-bold mx-auto">Strawberry Latte</h4>
+                        <span>5,000</span>
+                    </div>
+                    <img src="img/strawberryLatte.png" class="db">
+                    <p>딸기라떼</p>
+                </div>
+                <div class="pr milk6">
+                    <div class="pa text-center milk_text p-5 m6">
+                        <p class="">딸기를 얼음과 함께 갈아서 걸쭉하게 만들어 내는 음료.</p>
+                        <h4 class="m-5 fw-bold mx-auto">Strawberry Smoothie</h4>
+                        <span>5,000</span>
+                    </div>
+                    <img src="https://via.placeholder.com/260x330" class="d-block">
+                    <p>딸기 스무디</p>
+                </div>
+                <div class="pr milk7">
+                    <div class="pa text-center milk_text p-4 m7">
+                        <p class="mt-4">딸기에 요거트, 얼음을 함께 갈아서 걸쭉하게 만들어 내는 음료.</p>
+                        <h4 class="m-5 fw-bold mx-auto">Strawberry Yougurt Smoothie</h4>
+                        <span>5,000</span>
+                    </div>
+                    <img src="https://via.placeholder.com/260x330" class="d-block">
+                    <p>딸기 요거트 스무디</p>
+                </div>
+                <div class="pr milk8">
+                    <div class="pa text-center milk_text p-4 m8">
+                        <p class="mt-4">블루베리에 요거트, 얼음을 함께 갈아서 걸쭉하게 만들어 내는 음료.</p>
+                        <h4 class="m-5 fw-bold mx-auto">Blueberry Yougurt Smoothie</h4>
+                        <span>5,000</span>
+                    </div>
+                    <img src="https://via.placeholder.com/260x330" class="d-block">
+                    <p>블루베리 요거트 스무디</p>
+                </div>
+                <div class="pr milk9">
+                    <div class="pa text-center milk_text p-4 m9">
+                        <p class="mt-4">설탕・과일 등 다른 것을 아무것도 넣지 않고 얼음을 함게 갈아서 걸쭉하게 만들어 내는 요구르트</p>
+                        <h4 class="m-5 fw-bold mx-auto">Plain Yogurt Smoothie</h4>
+                        <span>5,000</span>
+                    </div>
+                    <img src="https://via.placeholder.com/260x330" class="db">
+                    <p>플레인 요거트 스무디</p>
+                </div>
+                <div class="pr milk10">
+                    <div class="pa text-center milk_text p-4 m10">
+                        <p class="mt-4">얼음에 오레오 쿠키를 부숴 넣은 걸쭉하게 만들어 내는 음료</p>
+                        <h4 class="m-5 fw-bold mx-auto">Cookie & Cream Smoothie</h4>
+                        <span>5,000</span>
+                    </div>
+                    <img src="https://via.placeholder.com/260x330" class="db">
+                    <p>쿠앤크 스무디</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container cont mb-5">
+        <h2 class="h2_tea" id="tea">Tea</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        <div class="tea mb-5">
+            <h3 class="tea_header">TEA</h3>
+
+            <div class="tea_contents">
+                <div class="pr tea1">
+                    <div class="pa text-center tea_text p-5 t1">
+                        <p class="">레몬을 우려낸 과실차</p>
+                        <h4 class="m-5 fw-bold mx-auto">Lemon Tea</h4>
+                        <span>5,000</span>
+                    </div>
+                    <img src="https://via.placeholder.com/260x330" class="d-block">
+                    <p>레몬차</p>
+                </div>
+                <div class="pr tea2">
+                    <div class="pa text-center tea_text p-4 t2">
+                        <p class="mt-4">자몽을 우려낸 과실차</p>
+                        <h4 class="m-5 fw-bold mx-auto">Grapefruit Tea</h4>
+                        <span>5,000</span>
+                    </div>
+                    <img src="img/jamong.png" class="d-block">
+                    <p>자몽차</p>
+                </div>
+                <div class="pr tea3">
+                    <div class="pa text-center tea_text p-4 t3">
+                        <p class="mt-4">유자를 우려낸 과실차</p>
+                        <h4 class="m-5 fw-bold mx-auto">Citron Tea</h4>
+                        <span>5,000</span>
+                    </div>
+                    <img src="https://via.placeholder.com/260x330" class="d-block">
+                    <p>유자차</p>
+                </div>
+                <div class="pr tea4">
+                    <div class="pa text-center tea_text p-4 t4">
+                        <p class="mt-4">생강을 우려낸 차</p>
+                        <h4 class="m-5 fw-bold mx-auto">Glinger Tea</h4>
+                        <span>5,000</span>
+                    </div>
+                    <img src="https://via.placeholder.com/260x330" class="d-block">
+                    <p>생강차</p>
+                </div>
+                <div class="pr tea5">
+                    <div class="pa text-center tea_text p-4 t5">
+                        <p class="mt-4">백작약, 숙지황, 당귀, 천궁, 계피, 감초를 넣어 달여낸 차</p>
+                        <h4 class="m-5 fw-bold mx-auto">Black Herbal Tea</h4>
+                        <span>6,000</span>
+                    </div>
+                    <img src="https://via.placeholder.com/260x330" class="db">
+                    <p>[겨울 시즌]쌍화차</p>
+                </div>
+                <div class="pr tea6">
+                    <div class="pa text-center tea_text p-5 t6">
+                        <p class="">대추를 끓여서 만든 차</p>
+                        <h4 class="m-5 fw-bold mx-auto">Jujube Tea</h4>
+                        <span>5,000</span>
+                    </div>
+                    <img src="https://via.placeholder.com/260x330" class="d-block">
+                    <p>[겨울 시즌]대추차</p>
+                </div>
+                <div class="pr tea7">
+                    <div class="pa text-center tea_text p-4 t7">
+                        <p class="mt-4">히비스커스 베이스의 상큼한 애플티에 유자청을 더한 새콤 달콤한 과일차</p>
+                        <h4 class="m-5 fw-bold mx-auto">Apple Citron Tea</h4>
+                        <span>5,000</span>
+                    </div>
+                    <img src="https://via.placeholder.com/260x330" class="d-block">
+                    <p>애플 유자차</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="eillestea">
+            <h3 class="eillestea_header">EILLESTEA</h3>
+
+            <div class="eillestea_contents">
+                <div class="pr eillestea1">
+                    <div class="pa text-center eillestea_text p-5 e1">
+                        <p class="">루이보스에 바닐라 향을 더해 부드럽고 포근한 맛으로 카페인이 전혀 없어 아이들도 안심하고 마실수 있는 허브차</p>
+                        <h4 class="m-5 fw-bold mx-auto">Rooibos Vanilla</h4>
+                        <span>5,000</span>
+                    </div>
+                    <img src="https://via.placeholder.com/260x330" class="d-block">
+                    <p>루이보스 바닐라</p>
+                </div>
+                <div class="pr eillestea2">
+                    <div class="pa text-center eillestea_text p-4 e2">
+                        <p class="mt-4">부드럽고 향긋한 베르가못향과 전형적인 홍차의 맛이 어우러진 차</p>
+                        <h4 class="m-5 fw-bold mx-auto">Earl Grey</h4>
+                        <span>5,000</span>
+                    </div>
+                    <img src="https://via.placeholder.com/260x330" class="d-block">
+                    <p>얼그레이</p>
+                </div>
+                <div class="pr eillestea3">
+                    <div class="pa text-center eillestea_text p-4 e3">
+                        <p class="mt-4">피로회복과 집중력 향상에 좋은 천연 맨톨을 함유해 상쾌하고 시원한 맛의 허브차</p>
+                        <h4 class="m-5 fw-bold mx-auto">Peppermint</h4>
+                        <span>5,000</span>
+                    </div>
+                    <img src="https://via.placeholder.com/260x330" class="d-block">
+                    <p>페퍼민트</p>
+                </div>
+                <div class="pr eillestea4">
+                    <div class="pa text-center eillestea_text p-4 e4">
+                        <p class="mt-4">은은한 캐모마일향의 감미로운 맛이 마음을 편안하게 해주는 허브차</p>
+                        <h4 class="m-5 fw-bold mx-auto">Chamomile</h4>
+                        <span>5,000</span>
+                    </div>
+                    <img src="https://via.placeholder.com/260x330" class="d-block">
+                    <p>캐모마일</p>
+                </div>
+                <div class="pr eillestea5">
+                    <div class="pa text-center eillestea_text p-4 e5">
+                        <p class="mt-4">사과, 사과 향, 히비스커스, 로즈힙 필 등이 첨가되어 사과맛이 강렬한 과일차</p>
+                        <h4 class="m-5 fw-bold mx-auto">Apple</h4>
+                        <span>6,000</span>
+                    </div>
+                    <img src="https://via.placeholder.com/260x330" class="db">
+                    <p>애플</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <? include "footer.html" ?>
+    </footer>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js"
+        integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let tabIndex = sessionStorage.getItem("drink_key");
+        let drinkSub = document.querySelectorAll('.cont');
+        let li = drinkSub[0].getElementsByTagName("li");
+        console.log(tabIndex);
+        for (let k = 0; k < drinkSub.length; k++) {
+            if (k == tabIndex) {
+                drinkSub[k].style.display = "block";
+            } else {
+                drinkSub[k].style.display = "none";
+            }
+        }
+
+        for (let i = 1; i < 16; i++) {
+            document.querySelector('.pr' + i).addEventListener('mouseover', function () {
+                document.querySelector('.brewing' + i).classList.add('show')
+            })
+        }
+        for (let j = 1; j < 16; j++) {
+            document.querySelector('.pr' + j).addEventListener('mouseleave', function () {
+                document.querySelector('.brewing' + j).classList.remove('show')
+            })
+        }
+
+        for (let k = 1; k < 11; k++) {
+            document.querySelector('.bv' + k).addEventListener('mouseover', function () {
+                document.querySelector('.beverage' + k).classList.add('show')
+            })
+        }
+        for (let l = 1; l < 11; l++) {
+            document.querySelector('.bv' + l).addEventListener('mouseleave', function () {
+                document.querySelector('.beverage' + l).classList.remove('show')
+            })
+        }
+
+        for (let m = 1; m < 11; m++) {
+            document.querySelector('.milk' + m).addEventListener('mouseover', function () {
+                document.querySelector('.m' + m).classList.add('show')
+            })
+        }
+        for (let n = 1; n < 11; n++) {
+            document.querySelector('.milk' + n).addEventListener('mouseleave', function () {
+                document.querySelector('.m' + n).classList.remove('show')
+            })
+        }
+
+        for (let o = 1; o < 8; o++) {
+            document.querySelector('.tea' + o).addEventListener('mouseover', function () {
+                document.querySelector('.t' + o).classList.add('show')
+            })
+        }
+        for (let p = 1; p < 8; p++) {
+            document.querySelector('.tea' + p).addEventListener('mouseleave', function () {
+                document.querySelector('.t' + p).classList.remove('show')
+            })
+        }
+        for (let q = 1; q < 6; q++) {
+            document.querySelector('.eillestea' + q).addEventListener('mouseover', function () {
+                document.querySelector('.e' + q).classList.add('show')
+            })
+        }
+        for (let r = 1; r < 6; r++) {
+            document.querySelector('.eillestea' + r).addEventListener('mouseleave', function () {
+                document.querySelector('.e' + r).classList.remove('show')
+            })
+        }
+    </script>
+</body>
